@@ -1,5 +1,7 @@
-﻿Namespace CreateRadialMenu
-    Partial Public Class Form1
+Namespace CreateRadialMenu
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+'#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -31,18 +33,18 @@
             Me.barDockControlBottom = New DevExpress.XtraBars.BarDockControl()
             Me.barDockControlLeft = New DevExpress.XtraBars.BarDockControl()
             Me.barDockControlRight = New DevExpress.XtraBars.BarDockControl()
-            DirectCast(Me.barManager1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.barManager1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' barManager1
             ' 
-            Me.barManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() { Me.bar2})
+            Me.barManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() {Me.bar2})
             Me.barManager1.DockControls.Add(Me.barDockControlTop)
             Me.barManager1.DockControls.Add(Me.barDockControlBottom)
             Me.barManager1.DockControls.Add(Me.barDockControlLeft)
             Me.barManager1.DockControls.Add(Me.barDockControlRight)
             Me.barManager1.Form = Me
-            Me.barManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.btnShowRadialMenu})
+            Me.barManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.btnShowRadialMenu})
             Me.barManager1.MainMenu = Me.bar2
             Me.barManager1.MaxItemId = 1
             ' 
@@ -52,7 +54,7 @@
             Me.bar2.DockCol = 0
             Me.bar2.DockRow = 0
             Me.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-            Me.bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.btnShowRadialMenu)})
+            Me.bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.btnShowRadialMenu)})
             Me.bar2.OptionsBar.MultiLine = True
             Me.bar2.OptionsBar.UseWholeRow = True
             Me.bar2.Text = "Main menu"
@@ -62,6 +64,7 @@
             Me.btnShowRadialMenu.Caption = "Show Radial Menu"
             Me.btnShowRadialMenu.Id = 0
             Me.btnShowRadialMenu.Name = "btnShowRadialMenu"
+            AddHandler Me.btnShowRadialMenu.ItemClick, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.btnShowRadialMenu_ItemClick)
             ' 
             ' barDockControlTop
             ' 
@@ -106,21 +109,24 @@
             Me.Controls.Add(Me.barDockControlTop)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.barManager1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.barManager1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
-
+'#End Region
         Private barManager1 As DevExpress.XtraBars.BarManager
+
         Private bar2 As DevExpress.XtraBars.Bar
-        Private WithEvents btnShowRadialMenu As DevExpress.XtraBars.BarButtonItem
+
+        Private btnShowRadialMenu As DevExpress.XtraBars.BarButtonItem
+
         Private barDockControlTop As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlBottom As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlLeft As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlRight As DevExpress.XtraBars.BarDockControl
     End Class
 End Namespace
-
