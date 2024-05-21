@@ -6,7 +6,7 @@
 
 # Create and show a WinForms Radial Menu
 
-This example demonstrates how to create, customize, and display a Radial Menu.
+This example creates, customizes, and displays the DevExpress Radial Menu.
 
 ![WinForms Radial Menu](https://raw.githubusercontent.com/DevExpress-Examples/how-to-create-and-show-a-radial-menu-e4311/16.2.3%2B/media/winforms-radial-menu.png)
 
