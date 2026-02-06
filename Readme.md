@@ -9,7 +9,7 @@
 
 This example creates, customizes, and displays the DevExpress Radial Menu.
 
-![WinForms Radial Menu](https://raw.githubusercontent.com/DevExpress-Examples/how-to-create-and-show-a-radial-menu-e4311/16.2.3%2B/media/winforms-radial-menu.png)
+![WinForms Radial Menu](media/winforms-radial-menu.png)
 
 
 ## Files to Review
